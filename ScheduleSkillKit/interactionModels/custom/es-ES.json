@@ -1,0 +1,92 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "dia",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "day",
+              "type": "day"
+            }
+          ],
+          "name": "ItinerarioIntent",
+          "samples": [
+            "actividades {day}",
+            "que hacemos el {day}",
+            "que hay el {day}",
+            "actividades para el {day}",
+            "muéstrame las actividades del {day}",
+            "qué actividades hay el {dia}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "domingo"
+              }
+            },
+            {
+              "name": {
+                "value": "sabado"
+              }
+            },
+            {
+              "name": {
+                "value": "viernes"
+              }
+            },
+            {
+              "name": {
+                "value": "jueves"
+              }
+            },
+            {
+              "name": {
+                "value": "miercoles"
+              }
+            },
+            {
+              "name": {
+                "value": "martes"
+              }
+            },
+            {
+              "name": {
+                "value": "lunes "
+              }
+            }
+          ],
+          "name": "day"
+        }
+      ],
+      "invocationName": "itinerario tren"
+    }
+  }
+}
